@@ -1,0 +1,7 @@
+{
+  "name": "v6-basic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
