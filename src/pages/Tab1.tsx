@@ -1,8 +1,16 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import {
+  IonButton,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from '@ionic/react'
+import ExploreContainer from '../components/ExploreContainer'
+import './Tab1.css'
 
-const Tab1: React.FC = () => {
+function Tab1({ onClick }: any) {
+  console.log('TAB1')
   return (
     <IonPage>
       <IonHeader>
@@ -17,9 +25,10 @@ const Tab1: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Tab 1 page" />
+        <IonButton onClick={onClick}>Logout</IonButton>
       </IonContent>
     </IonPage>
-  );
-};
+  )
+}
 
-export default Tab1;
+export default Tab1
