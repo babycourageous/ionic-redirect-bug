@@ -27,7 +27,7 @@ function Login({ onLogin }: any) {
             <IonTitle size="large">LOGIN</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton onClick={onLogin}>Login</IonButton>
+        {/* <IonButton onClick={onLogin}>Login</IonButton> */}
         <div>
           <Link to="/asdf">GOTO TAB 1</Link>
         </div>
